@@ -1,0 +1,39 @@
+header {
+  background: url(background.JPG);
+  background-size: cover;
+  height: 70vh;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: #fff;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.3rem;
+}
+main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.7rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #009933;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
