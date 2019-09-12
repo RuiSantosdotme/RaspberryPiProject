@@ -15,6 +15,7 @@ LED_PIN = 18 #GPIO pin connected to the pixels (must support PWM!)
 LED_FREQ_HZ = 800000 #LED signal frequency in hertz (usually 800khz)
 LED_DMA = 5 #DMA channel to use for generating signal (try 5)
 LED_INVERT = False #set True to invert the signal
+LED_CHANNEL = 0 #leave channel '0' for GPIO 18
 
 #create pot objects to refer to MCP3008 channel 0 and 1
 pot_brightness = MCP3008(0)
@@ -57,7 +58,7 @@ def start_animation():
 button_start.when_pressed = start_animation
 
 #create NeoPixel object with appropriate configuration
-strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, int(pot_brightness.value*255))
+strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, int(pot_brightness.value*255), LED_CHANNEL)
 #initialize the strip
 strip.begin()
 while True:
