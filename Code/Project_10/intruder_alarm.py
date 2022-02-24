@@ -9,6 +9,7 @@ from email.mime.text import MIMEText
 from signal import pause
 
 #create objects to refer to each LED, the button, and the PIR sensorled_status = LED(17)
+led_status = LED(17)
 led_triggered = LED(18)
 button = Button(2)
 pir = MotionSensor(4)
