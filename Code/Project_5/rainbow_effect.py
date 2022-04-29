@@ -5,9 +5,9 @@
 #based on Tony DiCola's NeoPixel library strandtest example
 
 #import necessary libraries
-from neopixel import *
 from time import sleep
 from gpiozero import Button, MCP3008
+from rpi_ws281x import *
 
 # LED strip configuration
 LED_COUNT = 14 #number of LED pixels
